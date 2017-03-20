@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Flh-s3-Uwm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Amnesiac Deaf Aunty-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type here !" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hqk-ev-UQ4">
+                                <rect key="frame" x="16" y="215" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.90265650665959518" green="0.84443760746888508" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5A-Jb-bvq">
+                                <rect key="frame" x="16" y="149" width="343" height="30"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Say something to aunty:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.78907857571545226" green="0.92890239738038771" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="25" name="Cochin-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oi0-mY-Bn3">
+                                <rect key="frame" x="75" y="317" width="225" height="35"/>
+                                <color key="backgroundColor" red="0.89213995935379375" green="0.84094953939371364" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Say It!">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="20" name="Cochin-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="36v-gC-X5x" kind="show" identifier="saySegue" id="DtP-Sm-Tw9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21366985103626945" green="0.21366985103626945" blue="0.21366985103626945" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hqk-ev-UQ4" firstAttribute="centerX" secondItem="oi0-mY-Bn3" secondAttribute="centerX" id="2I5-vs-b49"/>
+                            <constraint firstItem="A5A-Jb-bvq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="62J-yH-m8R"/>
+                            <constraint firstItem="A5A-Jb-bvq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7BX-5Y-hVk"/>
+                            <constraint firstItem="A5A-Jb-bvq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="85" id="EZe-f3-tec"/>
+                            <constraint firstItem="A5A-Jb-bvq" firstAttribute="leading" secondItem="Hqk-ev-UQ4" secondAttribute="leading" id="LLP-6l-b8b"/>
+                            <constraint firstItem="Hqk-ev-UQ4" firstAttribute="top" secondItem="A5A-Jb-bvq" secondAttribute="bottom" constant="36" id="Ye7-rx-dxI"/>
+                            <constraint firstItem="oi0-mY-Bn3" firstAttribute="top" secondItem="Hqk-ev-UQ4" secondAttribute="bottom" constant="72" id="bUi-j5-EdT"/>
+                            <constraint firstItem="oi0-mY-Bn3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="59" id="gdD-WL-nSA"/>
+                            <constraint firstItem="A5A-Jb-bvq" firstAttribute="trailing" secondItem="Hqk-ev-UQ4" secondAttribute="trailing" id="zZk-Tp-Mo9"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Amnesiac Deaf Aunty" id="FhO-2v-QVd"/>
+                    <connections>
+                        <outlet property="speechTextField" destination="Hqk-ev-UQ4" id="mCv-eq-PjF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912.79999999999995" y="138.98050974512745"/>
+        </scene>
+        <!--Enter Repetition View Controller-->
+        <scene sceneID="bdl-dI-eak">
+            <objects>
+                <viewController id="36v-gC-X5x" customClass="EnterRepetitionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e5J-BM-vts"/>
+                        <viewControllerLayoutGuide type="bottom" id="WNw-oP-vqo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JJi-Ld-eIx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ogb-jZ-UsR">
+                                <rect key="frame" x="16" y="154" width="343" height="23"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="What?">
+                                        <attributes>
+                                            <color key="NSColor" red="0.62397456705666776" green="0.83338679303424334" blue="0.85048979922279799" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="20" name="Cochin-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" borderStyle="roundedRect" placeholder="Time to repeat!" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2sp-N4-dII">
+                                <rect key="frame" x="16" y="213" width="343" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.84722142990394822" blue="0.89929971219959515" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Oap-e1-VBw">
+                                <rect key="frame" x="16" y="316" width="343" height="35"/>
+                                <color key="backgroundColor" red="0.85344912120270022" green="0.79812664539179656" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.59263861939464668" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="See Result!">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="20" name="Cochin-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="result:" destination="36v-gC-X5x" eventType="touchUpInside" id="dJZ-Rs-sT2"/>
+                                    <segue destination="eAt-06-YIC" kind="show" identifier="show" id="z6M-9Q-2gy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="C86-hH-euO">
+                                <rect key="frame" x="16" y="279" width="343" height="35"/>
+                                <color key="backgroundColor" red="0.86693096318457985" green="0.8290831899679193" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.0" green="0.59263861939999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Random Number">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="20" name="Cochin-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="random:" destination="36v-gC-X5x" eventType="touchUpInside" id="wtX-Bm-Oku"/>
+                                    <action selector="result:" destination="36v-gC-X5x" eventType="touchUpInside" id="oqd-9D-k4j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.19439936713755426" green="0.22327106107270381" blue="0.24044689119170981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Oap-e1-VBw" firstAttribute="top" secondItem="2sp-N4-dII" secondAttribute="bottom" constant="73" id="4bg-ce-EVc"/>
+                            <constraint firstItem="C86-hH-euO" firstAttribute="trailing" secondItem="Oap-e1-VBw" secondAttribute="trailing" id="6eV-QK-WFj"/>
+                            <constraint firstItem="Ogb-jZ-UsR" firstAttribute="leading" secondItem="2sp-N4-dII" secondAttribute="leading" id="7Q9-GH-yO7"/>
+                            <constraint firstItem="2sp-N4-dII" firstAttribute="leading" secondItem="Oap-e1-VBw" secondAttribute="leading" id="Ia8-zQ-aqA"/>
+                            <constraint firstItem="Ogb-jZ-UsR" firstAttribute="leading" secondItem="JJi-Ld-eIx" secondAttribute="leadingMargin" id="QIh-0F-BdL"/>
+                            <constraint firstItem="2sp-N4-dII" firstAttribute="top" secondItem="Ogb-jZ-UsR" secondAttribute="bottom" constant="36" id="W83-Bc-oxS"/>
+                            <constraint firstItem="Oap-e1-VBw" firstAttribute="top" secondItem="C86-hH-euO" secondAttribute="bottom" constant="2" id="f4r-js-6pI"/>
+                            <constraint firstItem="C86-hH-euO" firstAttribute="leading" secondItem="Oap-e1-VBw" secondAttribute="leading" id="fxk-HB-Fmv"/>
+                            <constraint firstItem="Ogb-jZ-UsR" firstAttribute="trailing" secondItem="JJi-Ld-eIx" secondAttribute="trailingMargin" id="hpu-Km-nw9"/>
+                            <constraint firstItem="Oap-e1-VBw" firstAttribute="centerY" secondItem="JJi-Ld-eIx" secondAttribute="centerY" id="kka-GM-TA0"/>
+                            <constraint firstItem="2sp-N4-dII" firstAttribute="trailing" secondItem="Oap-e1-VBw" secondAttribute="trailing" id="tpx-gy-pRA"/>
+                            <constraint firstItem="Ogb-jZ-UsR" firstAttribute="trailing" secondItem="2sp-N4-dII" secondAttribute="trailing" id="xj2-Ba-fk5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="resultLabel" destination="Ogb-jZ-UsR" id="Yaq-iH-Jtp"/>
+                        <outlet property="textField" destination="2sp-N4-dII" id="czi-Ox-aZK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K02-J8-TUm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="913" y="860"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="Jhm-JG-YYr">
+            <objects>
+                <viewController id="eAt-06-YIC" customClass="ResultViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Eol-7P-x3y"/>
+                        <viewControllerLayoutGuide type="bottom" id="X4t-PV-h9C"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CAz-tA-gdH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="chC-Oj-YTi">
+                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O6J-U0-3Yh">
+                                <rect key="frame" x="16" y="76" width="343" height="30"/>
+                                <color key="backgroundColor" red="0.94708561373121913" green="0.84985439779787153" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0or-Ce-TvW"/>
+                                    <constraint firstAttribute="width" constant="343" id="txa-kg-SVE"/>
+                                </constraints>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Try again">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="20" name="Cochin-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" !">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" metaFont="system" size="20"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <segue destination="Ndw-33-ZGx" kind="unwind" unwindAction="unwindSegue:" id="RkH-np-eLb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.23793509013768099" green="0.28497155581411876" blue="0.29377833549222798" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="chC-Oj-YTi" secondAttribute="trailing" id="Iwf-TT-PTz"/>
+                            <constraint firstItem="O6J-U0-3Yh" firstAttribute="centerX" secondItem="chC-Oj-YTi" secondAttribute="centerX" id="OGv-76-ccG"/>
+                            <constraint firstItem="O6J-U0-3Yh" firstAttribute="top" secondItem="Eol-7P-x3y" secondAttribute="bottom" constant="12" id="OQE-xS-un3"/>
+                            <constraint firstItem="chC-Oj-YTi" firstAttribute="leading" secondItem="CAz-tA-gdH" secondAttribute="leading" id="PFQ-Uk-7gu"/>
+                            <constraint firstItem="chC-Oj-YTi" firstAttribute="top" secondItem="O6J-U0-3Yh" secondAttribute="bottom" constant="8" symbolic="YES" id="Psr-7Y-nRV"/>
+                            <constraint firstItem="chC-Oj-YTi" firstAttribute="bottom" secondItem="X4t-PV-h9C" secondAttribute="top" id="R6O-pJ-vUu"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="chC-Oj-YTi" id="TCo-uK-NXd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IUf-cl-yjO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Ndw-33-ZGx" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="1705" y="139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eU8-8S-yt9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Flh-s3-Uwm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bJd-YF-BY5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="oIW-68-4CP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ssi-T8-JWL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154" y="139"/>
+        </scene>
+    </scenes>
+</document>
